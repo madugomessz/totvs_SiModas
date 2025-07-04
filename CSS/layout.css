@@ -4,12 +4,45 @@
     box-sizing: border-box;
 }
 
+
 header{
-    width: 100px;
-    height: 200px;
+    width: 99vw;
+    height: 12vh;
     background-color: rgb(136, 131, 125);
 }
 
-body{
-    background-color: aquamarine;
+/*Começo do home*/
+#home{
+    width: 99vw;
+    height: 88vh;
+    background-color: blueviolet;
 }
+
+
+
+/*Fim do home*/
+
+/*Começo da galeria do home*/
+#galeriaHome{
+    width: 99vw;
+    height: 100vh;
+    background-color: chocolate;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(12 1fr);
+    grid-template-rows: repeat(6 1fr);
+}
+/*Fim da galeria do home*/
+
+/*Começo do destaque do home*/
+#destaquesHome{
+    width: 99vw;
+    height: 100vh;
+    background-color: rgb(83, 201, 97);
+}
+/*Fim do destaque do home*/
+
+/*Começo do footer*/
+/*Fim do footer*/
+
+
