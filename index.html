@@ -5,16 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Si Modas | Inicio</title>
     <link rel="stylesheet" href="./CSS/layout.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
 </head>
 <body>
+    <!--Menu-->
     <header></header>
+    
     <main>
-        <section id="home"></section>
-        <section id="galeriaHome"></section>
+        <!--Imagem com link e botão de Compre agora-->
+        <section class="home">
+            <a href="pagina-destino.html" class="bg-link" aria-label="Ir para página Shop"></a>
+            <div class="conteudo">
+                <h1>Bem-vindo ao meu site!</h1>
+                <button onclick="window.location.href='outra-pagina.html'">Compre agora</button>
+            </div>
+        </section>
+        
+        <!--espaço ignorado-->
+        <div id="espaco"></div>
+
+        <!--Section com as três fotos-->
+        <section id="galeriaHome">
+            <div id="gHome_item1">
+                <img class="formtImgGh" src="./IMG/img_teste00.jpg">
+            </div>
+            <div id="gHome_item2">
+                <img class="formtImgGh" src="./IMG/img_teste00.jpg">
+            </div>
+            <div id="gHome_item3">
+                <img class="formtImgGh" src="./IMG/img_teste00.jpg">
+            </div>
+        </section>
+
+          <!--espaço ignorado-->
+        <div id="espaco"></div>
+
+        <!--Destaque com carrosel-->
         <section id="destaquesHome"></section>
     </main>
+
+
+    <!--Footer-->
     <footer>
-        
+         <div id="footer_content">
+            <div id="footer_contacts">
+              
+                <p>Cada peça um nome, uma história.</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <ul class="footer-list">
+                <li>
+                    <h3>SIMODAS</h3>
+                </li>
+                <li>
+                    <a href="./index.html" class="footer-link">HOME</a>
+                </li>
+                <li>
+                    <a href="./shop.html" class="footer-link">SHOP</a>
+                </li>
+                <li>
+                    <a href="./sobre.html" class="footer-link">SOBRE</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>OFERECEMOS</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Tecido de qualidade</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Atendimento personalizado</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Serviço qualificado</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>FIQUE POR DENTRO</h3>
+
+                <p>
+                    Cadastre seu e-mail para ficar por dentro de cada novidade SIMODAS.
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            Todos os direitos reservados 2025
+        </div>
     </footer>
 
 

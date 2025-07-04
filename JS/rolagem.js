@@ -1,6 +1,8 @@
- const sections = document.querySelectorAll("main section");
+const sections = document.querySelectorAll("main section");
   let currentIndex = 0;
   let isScrolling = false;
+
+  const menuHeightVH = 12;
 
   function scrollToSection(index) {
     if (index < 0) {
@@ -12,9 +14,16 @@
     }
 
     isScrolling = true;
-    sections[currentIndex].scrollIntoView({ behavior: "smooth" });
 
-    // Evita múltiplas rolagens rápidas
+    const target = sections[currentIndex];
+    const offset = window.innerHeight * (menuHeightVH / 100);
+    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+
+    window.scrollTo({
+      top,
+      behavior: "smooth"
+    });
+
     setTimeout(() => {
       isScrolling = false;
     }, 1000);
@@ -24,10 +33,8 @@
     if (isScrolling) return;
 
     if (event.deltaY > 0) {
-      // Scroll para baixo
       scrollToSection(currentIndex + 1);
     } else {
-      // Scroll para cima
       scrollToSection(currentIndex - 1);
     }
   });
