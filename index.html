@@ -5,13 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Si Modas | Inicio</title>
     <link rel="stylesheet" href="./CSS/layout.css">
-    <link rel="stylesheet" href="./CSS/footer.css">  <!-- caca-->
+    <link rel="stylesheet" href="./CSS/carrossel.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <!--aa-->
     <!--Menu-->
-    <header></header>
-    
+    <header>
+        <nav>
+            <ul>
+                <a href="#"><li>HOME</li></a>
+                <a href="#"><li>SHOP</li></a>
+                <a href="#"><li>GALERIA</li></a>
+                <a href="#"><li>SOBRE</li></a>
+            </ul>
+            <div id="logo">
+                <img src="./IMG/logo_fundo_branco.png" alt="logo simodas">
+            </div>
+            <div id="contatos">
+                <div id="social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <main>
         <!--Imagem com link e botão de Compre agora-->
         <section class="home">
@@ -21,7 +52,7 @@
                 <button onclick="window.location.href='outra-pagina.html'">Compre agora</button>
             </div>
         </section>
-        
+
         <!--espaço ignorado-->
         <div id="espaco"></div>
 
@@ -38,19 +69,62 @@
             </div>
         </section>
 
-          <!--espaço ignorado-->
+        <!--espaço ignorado-->
         <div id="espaco"></div>
 
         <!--Destaque com carrosel-->
-        <section id="destaquesHome"></section>
+        <section class="destaques" id="destaques">
+            <div class="destaques-container">
+                <h2 class="titulo">DESTAQUES</h2>
+                <div class="carrossel_wrapper">
+                    <div class="card destaque">
+                        <img src="./IMG/destaques_03.webp" alt="Leblon">
+                        <p>Macarronada meio a meio com cupim com molho madeira</p>
+                    </div>
+                    <div class="card">
+                        <img src="./IMG/destaques_03.webp" alt="Batata Rústica">
+                        <p>Arroz, feijão, Bife, ovo, salada e fritas</p>
+                    </div>
+                    <div class="card">
+                        <img src="./IMG/destaques_03.webp" alt="Quitandinha">
+                        <p>Arroz, couve, e feijoada</p>
+                    </div>
+                    <div class="card">
+                        <img src="./IMG/destaques_03.webp" alt="Quitandinha">
+                        <p>Arroz, feijão, fritas, omelete e Salada </p>
+                    </div>
+                    <div class="card">
+                        <img src="./IMG/destaques_03.webp" alt="Quitandinha">
+                        <p>Arroz, feijão, fritas, e costela suína com molho barbecue</p>
+                    </div>
+                    <div class="card">
+                        <img src="./IMG/destaques_03.webp" alt="Quitandinha">
+                        <p>Arroz, feijão, fritas, e costela suína com molho barbecue</p>
+                    </div>
+                    <div class="card">
+                        <img src="./IMG/destaques_03.webp" alt="Quitandinha">
+                        <p>Arroz, feijão, fritas, e costela suína com molho barbecue</p>
+                    </div>
+                    <div class="card">
+                        <img src="./IMG/destaques_03.webp" alt="Quitandinha">
+                        <p>Arroz, feijão, fritas, e costela suína com molho barbecue</p>
+                    </div>
+                </div>
+
+                <div class="controles">
+                    <button id="voltar"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button id="avancar"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            </div>
     </main>
 
 
     <!--Footer-->
     <footer>
-         <div id="footer_content">
+        <div id="footer_content">
             <div id="footer_contacts">
-              
+
                 <p>Cada peça um nome, uma história.</p>
 
                 <div id="footer_social_media">
@@ -67,7 +141,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <ul class="footer-list">
                 <li>
                     <h3>SIMODAS</h3>
@@ -123,6 +197,7 @@
 
     <!--Script para rolagem suave-->
     <script src="./JS/rolagem.js"></script>
-    
+    <script src="./JS/carrossel.js"></script>
 </body>
+
 </html>

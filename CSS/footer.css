@@ -17,6 +17,7 @@ footer {
 
 #footer_content {
     background-color: var(--color-neutral-10);
+    width: 99vw;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
@@ -120,6 +121,7 @@ footer {
 
 #footer_copyright {
     display: flex;
+    width: 100vw;
     justify-content: center;
     background-color: var(--color-neutral-0);
     font-size: 0.9rem;
