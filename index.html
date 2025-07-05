@@ -18,12 +18,18 @@
 <body>
     <!--Menu-->
     <header id="header_home">
+        <button id="menuToggle">&#9776;</button>
+        <button id="menuClose">&times;</button>
+
+
         <div class="containerMenu"><!--começo do menu-->
-            <nav>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">SHOP</a></li>
-                <li><a href="#">GALERIA</a></li>
-                <li><a href="#">SOBRE</a></li>
+            <nav id="navmenu">
+                <ul id="nav_list">
+                    <li class="list"><a href="#">HOME</a></li>
+                    <li class="list"><a href="./shop.html">SHOP</a></li>
+                    <li class="list"><a href="./galeria.html">GALERIA</a></li>
+                    <li class="list"><a href="./sobre.html">SOBRE</a></li>
+                </ul>
             </nav>
             <div class="logoHome">
                 <img src="./IMG/logo_fundo_branco.png" alt="logo da empresa" id="logoMenuCentral">
@@ -41,8 +47,8 @@
         <section class="home">
             <a href="pagina-destino.html" class="bg-link" aria-label="Ir para página Shop"></a>
             <div class="conteudo">
-                <h1>Bem-vindo ao meu site!</h1>
-                <button onclick="window.location.href='outra-pagina.html'">Compre agora</button>
+                <h1>Bem-vindo a Si Modas</h1>
+                <button onclick="window.location.href='./shop.html'">Compre agora</button>
             </div>
         </section>
 
@@ -189,6 +195,7 @@
 
 
     <!--Script para rolagem suave-->
+    <script src="./JS/menu_responsivo.js"></script>
     <script src="./JS/menuvisivel.js"></script>
     <script src="./JS/rolagem.js"></script>
     <script src="./JS/carrossel.js"></script>
