@@ -1,0 +1,116 @@
+/*Começo do destaque */
+.destaques {
+  width: 100%;
+  height: 100vh;
+}
+
+.destaques-container {
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.destaques .titulo {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.carrossel_wrapper {
+  display: flex;
+  height: 80vh;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.card {
+  flex: 0 0 25vw;
+  height: 70vh;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  opacity: 0.6;
+  transform: scale(0.9);
+  display: inline-block;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+}
+
+.card p {
+  font-size: 0.9rem;
+  padding: 8px 8px;
+  border-radius: 8px;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  
+}
+
+.card.destaque {
+  transform: scale(1);
+  height: 70vh;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35); */
+  border-radius: 18px;
+  opacity: 1;
+}
+
+.card.destaque p {
+  font-size: 0.9rem;
+  padding: 8px 8px;
+  border-radius: 8px;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.card.destaque:hover p {
+  visibility: visible;
+  opacity: 1;
+}
+
+.card img {
+  width: 100%;
+  height: 95%;
+  border-radius: 10px;
+  object-fit: cover;
+  position: relative;
+}
+
+.controles {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.controles button {
+  background: none;
+  margin-top: 10rem;
+  border: none;
+  color: #000;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 50%;
+  pointer-events: all;
+}
+
+/* fim do  destaque */
+
+@media (max-width: 768px) {
+  .card {
+    flex: 0 0 50vw; /* mostra 2 cards por vez no celular */
+  }
+}

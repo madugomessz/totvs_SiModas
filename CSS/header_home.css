@@ -1,0 +1,20 @@
+/* header escondido */
+header {
+  position: fixed;
+  top: -100px; /* Escondido inicialmente */
+  left: 0;
+  width: 100%;
+  height: 12vh;
+  background-color: white;
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  Sombra sutil */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: top 0.3s ease;
+}
+
+header.aparecer {
+  top: 0; /* Exibe o menu */
+}
+/* fim do header escondido */
