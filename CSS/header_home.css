@@ -1,5 +1,5 @@
 /* header escondido */
-header {
+#header_home {
   position: fixed;
   top: -100px; /* Escondido inicialmente */
   left: 0;
@@ -14,7 +14,47 @@ header {
   transition: top 0.3s ease;
 }
 
-header.aparecer {
+#header_home.aparecer {
   top: 0; /* Exibe o menu */
 }
 /* fim do header escondido */
+
+/*Começo do menu*/
+.containerMenu{
+  width: 80vw;
+  height: 12vh;
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content:center ;
+}
+
+nav{
+  width: 40vw;
+  height: 12vh;
+  background-color: cadetblue;
+}
+
+/*logo principal*/
+.logoHome{
+  width: 20vw;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+}
+
+#logoMenuCentral{
+  width: 35%;
+}
+
+/*Redes sociais*/
+.redeSociais{
+  width: 40vw;
+  height: 12vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 50px;
+}
+
+
+/*fim do menu*/
