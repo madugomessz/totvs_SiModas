@@ -4,29 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIMODAS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="/CSS/sobre.css">
+    <title>Si Modas | SOBRE</title>
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/header_home.css">
+    <link rel="stylesheet" href="./CSS/layout.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-     <header>
-        <nav>
-            <a href="#">
-                <img src="./IMG/logo.png" alt="Logo SIMODAS" class="logo">
-            </a>
-            <div class="mobile_menu">
-                <div class="linha01"></div>
-                <div class="linha02"></div>
-                <div class="linha03"></div>
+      <!--Menu-->
+    <header id="header_Demais">
+        <button id="menuToggle">&#9776;</button>
+        <button id="menuClose">&times;</button>
+
+
+        <div class="containerMenu"><!--começo do menu-->
+            <nav id="navmenu">
+                <ul id="nav_list">
+                    <li class="list"><a href="./index.html">HOME</a></li>
+                    <li class="list"><a href="./shop.html">SHOP</a></li>
+                    <li class="list"><a href="./galeria.html">GALERIA</a></li>
+                    <li class="list"><a href="./sobre.html">SOBRE</a></li>
+                </ul>
+            </nav>
+            <div class="logoHome">
+                <img src="./IMG/logo_fundo_branco.png" alt="logo da empresa" id="logoMenuCentral">
             </div>
-            <ul class="nav_list">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./shop.html">SHOP</a></li>
-                <li><a href="./sobre.html">SOBRE</a></li>
-                <li><a href="./galeria.html">GALERIA</a></li>
-                <li><a href="#footer_content">CONTATO</a></li>
-        </nav>
+            <div class="redeSociais">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </div><!--fim do menu-->
     </header>
-     <script src="./JS/mobile_navbar.js"></script>
 
      <main>
     
@@ -115,5 +127,10 @@
             Todos os direitos reservados 2025
         </div>
     </footer>
+        <!--Script para rolagem suave-->
+    <script src="./JS/menu_responsivo.js"></script>
+    <script src="./JS/menuvisivel.js"></script>
+    <script src="./JS/rolagem.js"></script>
+    <script src="./JS/carrossel.js"></script>
 </body>
 </html>

@@ -18,7 +18,15 @@
 }
 /* fim do header escondido */
 
-
+#header_Demais{
+    position: fixed;
+    width: 100%;
+  height: 12vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 

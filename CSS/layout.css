@@ -39,7 +39,7 @@
 .conteudo button {
   margin: auto;
   width: 10vw;
-  height: 4vh;
+  height: 5vh;
   font-size: 1rem;
   background-color: #ffffff00;
   border: 1px solid #fff;
@@ -51,6 +51,12 @@
 .conteudo button:hover {
   background-color: #fff;
   color: #000;
+}
+
+@media screen and (max-width:767px){
+  .conteudo button{
+    width: 20vw;
+  }
 }
 /*Fim do home*/
 
