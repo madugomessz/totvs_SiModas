@@ -134,7 +134,47 @@ footer {
 /*Fim do footer*/
 
 /*Footer tela responsivo*/
-@media screen and (max-width:767px){
+@media screen and (max-width: 767px) {
+  #footer_content {
+    grid-template-columns: 1fr; /* Deixa em 1 coluna */
+    gap: 3rem;
+    padding: 2rem;
+    text-align: center;
+  }
 
+  #footer_social_media {
+    justify-content: center; /* Centraliza os ícones */
+  }
+
+  .footer-list {
+    align-items: center;
+  }
+
+  #footer_subscribe {
+    align-items: center;
+  }
+
+  #input_group {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  #input_group input,
+  #input_group button {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  #input_group button {
+    margin-top: 8px;
+    border-radius: 4px;
+  }
+
+  #footer_copyright {
+    text-align: center;
+    padding: 1rem;
+  }
 }
+
 
