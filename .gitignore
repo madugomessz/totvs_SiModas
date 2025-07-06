@@ -1,4 +1,4 @@
-0h40 dia 05/Jul
+0h40 dia 05/Jul pacheco
 
 O que eu mexi:
 Fiz o nav, porém ainda não linkei as páginas nem as redes sociais, no nav, não estou conseguindo colocar o position fixed pq o nav fica jogado pra esquerda e tive que alterar o carrossel porque tava dando conflito,  usei o chatgpt mas tá funcionando, porem tem um problema q basicamente ele "vira a pagina" de 1 em 1.
@@ -6,7 +6,7 @@ Adicionei tbm as outras paginas mas não mexi nelas por hora. Se eu fizer mais c
 
 
 
-12h58 dia 05/Jul
+12h58 dia 05/Jul Rafa
 
 Separei os css para uma melhor organização:
     base.css - padrão para todas as páginas
@@ -21,10 +21,17 @@ O destaque ajustei algumas coisas e ele já está responsivo
 
 
 
-14:04 dia 06/Jul
+[[ 14:04 dia 06/Jul       ______ commit - att galeria, galeria css e header fixo_____   pacheco
 
 Separei um css para o header fixo e um para galeria
    - header_nav_Fixo.css
    - galeria.css
 
 centralizei a galeria e adicionei position relative no #header_home para não esconder o texto
+
+
+14:22 dia 06/Jul      ______ commit - att hover nas imagens da galeria_____   pacheco
+    - quando passar o mouse em cima da imagem, mostra o texto
+    - manter ou tirar?
+    
+]]
