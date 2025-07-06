@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Si Modas | SHOP</title>
+    <title>Si Modas | Inicio</title>
     <link rel="stylesheet" href="./CSS/base.css">
     <link rel="stylesheet" href="./CSS/header_home.css">
     <link rel="stylesheet" href="./CSS/layout.css">
+    <link rel="stylesheet" href="./CSS/destaqueHome.css">
     <link rel="stylesheet" href="./CSS/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -15,7 +16,7 @@
 
 <body>
     <!--Menu-->
-    <header id="header_Demais">
+    <header id="header_home">
         <button id="menuToggle">&#9776;</button>
         <button id="menuClose">&times;</button>
 
@@ -23,7 +24,7 @@
         <div class="containerMenu"><!--começo do menu-->
             <nav id="navmenu">
                 <ul id="nav_list">
-                    <li class="list"><a href="./index.html">HOME</a></li>
+                    <li class="list"><a href="#">HOME</a></li>
                     <li class="list"><a href="./shop.html">SHOP</a></li>
                     <li class="list"><a href="./galeria.html">GALERIA</a></li>
                     <li class="list"><a href="./sobre.html">SOBRE</a></li>
@@ -39,11 +40,85 @@
             </div>
         </div><!--fim do menu-->
     </header>
+
     <main>
+        <!--Imagem com link e botão de Compre agora-->
+        <section class="home">
+            <a href="./shop.html" class="bg-link" aria-label="Ir para página Shop"></a>
+            <div class="conteudo">
+                <h1>Bem-vindo a Si Modas</h1>
+                <button onclick="window.location.href='./shop.html'">Compre agora</button>
+            </div>
+        </section>
 
+        <!--espaço ignorado-->
+        <div id="espaco"></div>
 
+        <!--Section com as três fotos-->
+        <section id="galeriaHome">
+        <div id="gHome_item1">
+            <img class="formtImgGh" src="./IMG/img_teste00.jpg">
+        </div>
+        <div id="gHome_item2">
+            <img class="formtImgGh" src="./IMG/img_teste00.jpg">
+        </div>
+        <div id="gHome_item3">
+            <img class="formtImgGh" src="./IMG/img_teste00.jpg">
+        </div>
+    </section>
+
+        <!--espaço ignorado-->
+        <div id="espaco"></div>
+
+        <!--Destaque com carrosel-->
+        <section class="destaques" id="destaques">
+            <div class="destaques-container">
+                <h2 class="titulo">DESTAQUES</h2>
+                <div class="carrossel_wrapper">
+                    <div class="card destaque">
+                        <img src="./IMG/A.png" alt="Leblon" class="tamanhoImgDestaque">
+                        <p>Lorem ipsum dolor sit amet, consectetur.</br>R$ 000,00</p>
+                    </div>
+                    <div class="card">
+                        <img src="./IMG/B.png" alt="Batata Rústica" class="tamanhoImgDestaque">
+                        <p>Lorem ipsum dolor sit amet, consectetur.</br>R$ 000,00</p>
+                    </div>
+                    <div class="card">
+                        <img src="./IMG/C.png" alt="Quitandinha">
+                        <p>Lorem ipsum dolor sit amet, consectetur.</br>R$ 000,00</p>
+                    </div>
+                    <div class="card">
+                        <img src="./IMG/D.png" alt="Quitandinha">
+                        <p>Lorem ipsum dolor sit amet, consectetur.</br>R$ 000,00</p>
+                    </div>
+                    <div class="card">
+                        <img src="./IMG/E.png" alt="Quitandinha">
+                        <p>Lorem ipsum dolor sit amet, consectetur.</br>R$ 000,00</p>
+                    </div>
+                    <div class="card">
+                        <img src="./IMG/F.png" alt="Quitandinha">
+                        <p>Lorem ipsum dolor sit amet, consectetur.</br>R$ 000,00</p>
+                    </div>
+                    <div class="card">
+                        <img src="./IMG/G.png" alt="Quitandinha">
+                        <p>Lorem ipsum dolor sit amet, consectetur.</br>R$ 000,00</p>
+                    </div>
+                    <div class="card">
+                        <img src="./IMG/H.png" alt="Quitandinha">
+                        <p>Lorem ipsum dolor sit amet, consectetur.</br>R$ 000,00</p>
+                    </div>
+                </div>
+
+                <div class="controles">
+                    <button id="voltar"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button id="avancar"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
     </main>
-     <!--Footer-->
+
+
+    <!--Footer-->
     <footer>
         <div id="footer_content">
             <div id="footer_contacts">
@@ -122,6 +197,7 @@
     <script src="./JS/menu_responsivo.js"></script>
     <script src="./JS/menuvisivel.js"></script>
     <script src="./JS/rolagem.js"></script>
+    <script src="./JS/carrosselGaleriaHome.js"></script>
     <script src="./JS/carrossel.js"></script>
 </body>
 
