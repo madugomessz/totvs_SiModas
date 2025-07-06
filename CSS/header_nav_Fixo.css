@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header_home {
+  position: relative; /* adicionei o relative pq tava escondendo o texto*/
+  width: 100%;
+  height: 12vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: top 0.3s ease;
+}
+
+
+#header_Demais{
+    position: fixed;
+    width: 100%;
+  height: 12vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Começo do menu*/
+.containerMenu{
+  width: 80vw;
+  height: 12vh;
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content:center ;
+  margin: auto;
+}
+
+nav{
+  width: 40vw;
+  height: 12vh;
+}
+
+/*logo principal*/
+.logoHome{
+  width: 20vw;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+}
+
+#logoMenuCentral{
+  width: 35%;
+}
+
+/*Redes sociais*/
+.redeSociais{
+  width: 40vw;
+  height: 12vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 50px;
+}
+/*fim do menu*/
+
+
+
+
+ /*começo do nav*/
+
+ /* Botão só aparece no mobile */
+#menuToggle,
+#menuClose {
+    display: none;
+}
+
+/* Estilo padrão para desktop */
+#navmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav_list{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.list a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-size:0.8em;
+}
+
+a:hover{
+    color: #810c4a;;
+}
+
+
+/* ========== MOBILE ========== */
+/* MOBILE */
+@media (max-width: 767px) {
+     /* Botão hamburguer */
+    #menuToggle {
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1001;
+        font-size: 30px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #000;
+    }
+
+    /* Botão "X" */
+    #menuClose {
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1002;
+        font-size: 32px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #000;
+        display: none;
+    }
+
+    /* Container principal do menu em mobile */
+.containerMenu {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+ /* Centraliza a logo com margem automática */
+.logoHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#logoMenuCentral {
+    width: 60px; /* ajuste conforme necessário */
+}
+
+/* Redes sociais fixas na parte de baixo, mas dentro do fluxo */
+.redeSociais {
+    position: absolute;
+    bottom: 10px; /* ajustável: quanto menor, mais para baixo */
+    right: 20px;
+    display: flex;
+    gap: 20px;
+    z-index: 1;
+}
+
+    /* Menu lateral deslizante */
+    #nav_list {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        background-color: #f0f0f0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 60px 20px;
+        gap: 30px;
+        transition: left 0.4s ease-in-out;
+        z-index: 1000;
+    }
+
+    #nav_list.active {
+        left: 0;
+    }
+
+    body.menu-ativo #conteudoPrincipal {
+        transform: translateX(250px);
+        transition: transform 0.4s ease-in-out;
+    }
+
+    #navmenu {
+        all: unset;
+    }
+}
+/*fim do nav*/

@@ -18,3 +18,13 @@ O header agora só aparece quando deslizado, vamos deixar assim só na home, nas
 O menu que você fez copie o código e vou reaproveitar mais tarde. 
 
 O destaque ajustei algumas coisas e ele já está responsivo
+
+
+
+14:04 dia 06/Jul
+
+Separei um css para o header fixo e um para galeria
+   - header_nav_Fixo.css
+   - galeria.css
+
+centralizei a galeria e adicionei position relative no #header_home para não esconder o texto
