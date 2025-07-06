@@ -55,7 +55,7 @@
 
 @media screen and (max-width:767px){
   .conteudo button{
-    width: 20vw;
+    width: 20;
   }
 }
 /*Fim do home*/
@@ -102,6 +102,56 @@
 
 /*Fim da galeria do home*/
 
+@media (max-width: 767px) {
+  #galeriaHome {
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden; 
+    scroll-behavior: smooth;
+    gap: 12px;
+    width: 100%;
+    height: 100vh; /* <- AQUI */
+  padding: 0;
+  margin: 0;
+  }
 
+  #galeriaHome > div {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    height: 100vh;        /* a altura do item deve preencher o container */
+  overflow: hidden;     /* evitar que o conteúdo interno cause rolagem */
+  }
 
+  .formtImgGh {
+    width: 100%;
+    height: 100vh;
+     object-fit: cover;     /* preenche a área sem distorcer */
+  display: block;        /* evita gaps indesejados */
+  }
 
+.btn-galeria {
+  display: none; /* Começa invisível */
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.btn-galeria.left {
+  left: 10px;
+}
+
+.btn-galeria.right {
+  right: 10px;
+}
+
+.btn-galeria.show {
+  display: block; /* Só mostra quando o carrossel está visível */
+}
+}
