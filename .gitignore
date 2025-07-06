@@ -21,7 +21,8 @@ O destaque ajustei algumas coisas e ele já está responsivo
 
 
 
-[[ 14:04 dia 06/Jul       ______ commit - att galeria, galeria css e header fixo_____   pacheco
+================================================================================================
+ 14:04 dia 06/Jul       ______ commit - att galeria, galeria css e header fixo_____   pacheco
 
 Separei um css para o header fixo e um para galeria
    - header_nav_Fixo.css
@@ -38,4 +39,4 @@ centralizei a galeria e adicionei position relative no #header_home para não es
 14:40 dia 06/Jul      ______ commit - att sobre.css, e txt center no carrossel_____   pacheco
     - adicionei o css pronto do sobre.css antigo
     - no carrossel dos Destaques no index.html centralizei o texto, adicionando position relative
-]]
+=================================================================================================
