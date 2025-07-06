@@ -34,4 +34,8 @@ centralizei a galeria e adicionei position relative no #header_home para não es
     - quando passar o mouse em cima da imagem, mostra o texto
     - manter ou tirar?
     
+
+14:40 dia 06/Jul      ______ commit - att sobre.css, e txt center no carrossel_____   pacheco
+    - adicionei o css pronto do sobre.css antigo
+    - no carrossel dos Destaques no index.html centralizei o texto, adicionando position relative
 ]]
