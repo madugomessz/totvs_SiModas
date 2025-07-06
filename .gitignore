@@ -2,4 +2,10 @@
 
 O que eu mexi:
 Fiz o nav, porém ainda não linkei as páginas nem as redes sociais, no nav, não estou conseguindo colocar o position fixed pq o nav fica jogado pra esquerda e tive que alterar o carrossel porque tava dando conflito,  usei o chatgpt mas tá funcionando, porem tem um problema q basicamente ele "vira a pagina" de 1 em 1.
-Adicionei tbm as outras paginas mas não mexi nelas por hora. Se eu fizer mais coisa no fim de semana deixo aqui.
+Adicionei tbm as outras paginas mas não mexi nelas por hora.
+
+01:01 dia 06/Jul
+adicionei as páginas HTMl que faltavam, ajustei toda a galeria, coloquei o novo nav, dei um efeito de zoom quando passa o mouse por cima das imagens, tentei colocar para aparecer um texto por exemplo "coleção tal" mas não consegui.
+Adicionei todos os CSS que faltavam, a página sobre está pronta já, """""""""apenas fazer o mobile"""""""""
+Fiz a âncora para todas as páginas, coloquei as imagens que faltavam do carrossel na pasta IMG, mas acho que devia separar essas pastas para organização.
+Nas páginas SOBRE e SHOP coloquei apenas o novo menu de navegação e a fonte no site todo.

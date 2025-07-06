@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Si Modas | Inicio</title>
     <link rel="stylesheet" href="./CSS/layout.css">
-    <link rel="stylesheet" href="./CSS/carrossel.css">
-    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/footer.css">    
+
+    <!-- biblioteca pras setas do carrossel  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
 </head>
 
 <body>
@@ -17,10 +20,10 @@
     <header>
         <nav>
             <ul>
-                <a href="#"><li>HOME</li></a>
-                <a href="#"><li>SHOP</li></a>
-                <a href="#"><li>GALERIA</li></a>
-                <a href="#"><li>SOBRE</li></a>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./shop.html">SHOP</a></li>
+                <li><a href="./galeria.html">GALERIA</a></li>
+                <li><a href="./sobre.html">SOBRE</a></li>
             </ul>
             <div id="logo">
                 <img src="./IMG/logo_fundo_branco.png" alt="logo simodas">
@@ -46,10 +49,10 @@
     <main>
         <!--Imagem com link e botão de Compre agora-->
         <section class="home">
-            <a href="pagina-destino.html" class="bg-link" aria-label="Ir para página Shop"></a>
+            <a href="./shop.html" class="bg-link" aria-label="Ir para página Shop"></a>
             <div class="conteudo">
                 <h1>Bem-vindo ao meu site!</h1>
-                <button onclick="window.location.href='outra-pagina.html'">Compre agora</button>
+                <button onclick="window.location.href='./shop.html'">Compre agora</button>
             </div>
         </section>
 
@@ -197,6 +200,7 @@
 
     <!--Script para rolagem suave-->
     <script src="./JS/rolagem.js"></script>
+    <!-- Script para carrossel dos Destaques -->
     <script src="./JS/carrossel.js"></script>
 </body>
 
