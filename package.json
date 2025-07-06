@@ -1,0 +1,23 @@
+{
+  "name": "totvs_simodas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./CSS/shop.css -o ./CSS/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madugomessz/totvs_SiModas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madugomessz/totvs_SiModas/issues"
+  },
+  "homepage": "https://github.com/madugomessz/totvs_SiModas#readme",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
