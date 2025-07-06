@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Si Modas | Inicio</title>
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/header_home.css">
     <link rel="stylesheet" href="./CSS/layout.css">
-    <link rel="stylesheet" href="./CSS/footer.css">    
-
-    <!-- biblioteca pras setas do carrossel  -->
+    <link rel="stylesheet" href="./CSS/destaqueHome.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,33 +18,29 @@
 
 <body>
     <!--Menu-->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./shop.html">SHOP</a></li>
-                <li><a href="./galeria.html">GALERIA</a></li>
-                <li><a href="./sobre.html">SOBRE</a></li>
-            </ul>
-            <div id="logo">
-                <img src="./IMG/logo_fundo_branco.png" alt="logo simodas">
-            </div>
-            <div id="contatos">
-                <div id="social_media">
-                    <a href="#" class="footer-link" id="instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
+    <header id="header_home">
+        <button id="menuToggle">&#9776;</button>
+        <button id="menuClose">&times;</button>
 
-                    <a href="#" class="footer-link" id="facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
 
-                    <a href="#" class="footer-link" id="whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                </div>
+        <div class="containerMenu"><!--começo do menu-->
+            <nav id="navmenu">
+                <ul id="nav_list">
+                    <li class="list"><a href="#">HOME</a></li>
+                    <li class="list"><a href="./shop.html">SHOP</a></li>
+                    <li class="list"><a href="./galeria.html">GALERIA</a></li>
+                    <li class="list"><a href="./sobre.html">SOBRE</a></li>
+                </ul>
+            </nav>
+            <div class="logoHome">
+                <img src="./IMG/logo_fundo_branco.png" alt="logo da empresa" id="logoMenuCentral">
             </div>
-        </nav>
+            <div class="redeSociais">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </div><!--fim do menu-->
     </header>
 
     <main>
@@ -51,7 +48,7 @@
         <section class="home">
             <a href="./shop.html" class="bg-link" aria-label="Ir para página Shop"></a>
             <div class="conteudo">
-                <h1>Bem-vindo ao meu site!</h1>
+                <h1>Bem-vindo a Si Modas</h1>
                 <button onclick="window.location.href='./shop.html'">Compre agora</button>
             </div>
         </section>
@@ -61,16 +58,16 @@
 
         <!--Section com as três fotos-->
         <section id="galeriaHome">
-            <div id="gHome_item1">
-                <img class="formtImgGh" src="./IMG/img_teste00.jpg">
-            </div>
-            <div id="gHome_item2">
-                <img class="formtImgGh" src="./IMG/img_teste00.jpg">
-            </div>
-            <div id="gHome_item3">
-                <img class="formtImgGh" src="./IMG/img_teste00.jpg">
-            </div>
-        </section>
+        <div id="gHome_item1">
+            <img class="formtImgGh" src="./IMG/img_teste00.jpg">
+        </div>
+        <div id="gHome_item2">
+            <img class="formtImgGh" src="./IMG/img_teste00.jpg">
+        </div>
+        <div id="gHome_item3">
+            <img class="formtImgGh" src="./IMG/img_teste00.jpg">
+        </div>
+    </section>
 
         <!--espaço ignorado-->
         <div id="espaco"></div>
@@ -81,36 +78,36 @@
                 <h2 class="titulo">DESTAQUES</h2>
                 <div class="carrossel_wrapper">
                     <div class="card destaque">
-                        <img src="./IMG/destaques_03.webp" alt="Leblon">
-                        <p>Macarronada meio a meio com cupim com molho madeira</p>
+                        <img src="./IMG/A.png" alt="Leblon" class="tamanhoImgDestaque">
+                        <p>Lorem ipsum dolor sit amet, consectetur.</br>R$ 000,00</p>
                     </div>
                     <div class="card">
-                        <img src="./IMG/destaques_03.webp" alt="Batata Rústica">
-                        <p>Arroz, feijão, Bife, ovo, salada e fritas</p>
+                        <img src="./IMG/B.png" alt="Batata Rústica" class="tamanhoImgDestaque">
+                        <p>Lorem ipsum dolor sit amet, consectetur.</br>R$ 000,00</p>
                     </div>
                     <div class="card">
-                        <img src="./IMG/destaques_03.webp" alt="Quitandinha">
-                        <p>Arroz, couve, e feijoada</p>
+                        <img src="./IMG/C.png" alt="Quitandinha">
+                        <p>Lorem ipsum dolor sit amet, consectetur.</br>R$ 000,00</p>
                     </div>
                     <div class="card">
-                        <img src="./IMG/destaques_03.webp" alt="Quitandinha">
-                        <p>Arroz, feijão, fritas, omelete e Salada </p>
+                        <img src="./IMG/D.png" alt="Quitandinha">
+                        <p>Lorem ipsum dolor sit amet, consectetur.</br>R$ 000,00</p>
                     </div>
                     <div class="card">
-                        <img src="./IMG/destaques_03.webp" alt="Quitandinha">
-                        <p>Arroz, feijão, fritas, e costela suína com molho barbecue</p>
+                        <img src="./IMG/E.png" alt="Quitandinha">
+                        <p>Lorem ipsum dolor sit amet, consectetur.</br>R$ 000,00</p>
                     </div>
                     <div class="card">
-                        <img src="./IMG/destaques_03.webp" alt="Quitandinha">
-                        <p>Arroz, feijão, fritas, e costela suína com molho barbecue</p>
+                        <img src="./IMG/F.png" alt="Quitandinha">
+                        <p>Lorem ipsum dolor sit amet, consectetur.</br>R$ 000,00</p>
                     </div>
                     <div class="card">
-                        <img src="./IMG/destaques_03.webp" alt="Quitandinha">
-                        <p>Arroz, feijão, fritas, e costela suína com molho barbecue</p>
+                        <img src="./IMG/G.png" alt="Quitandinha">
+                        <p>Lorem ipsum dolor sit amet, consectetur.</br>R$ 000,00</p>
                     </div>
                     <div class="card">
-                        <img src="./IMG/destaques_03.webp" alt="Quitandinha">
-                        <p>Arroz, feijão, fritas, e costela suína com molho barbecue</p>
+                        <img src="./IMG/H.png" alt="Quitandinha">
+                        <p>Lorem ipsum dolor sit amet, consectetur.</br>R$ 000,00</p>
                     </div>
                 </div>
 
@@ -119,7 +116,7 @@
                     <button id="avancar"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
-            </div>
+        </section>
     </main>
 
 
@@ -199,8 +196,10 @@
 
 
     <!--Script para rolagem suave-->
+    <script src="./JS/menu_responsivo.js"></script>
+    <script src="./JS/menuvisivel.js"></script>
     <script src="./JS/rolagem.js"></script>
-    <!-- Script para carrossel dos Destaques -->
+    <script src="./JS/carrosselGaleriaHome.js"></script>
     <script src="./JS/carrossel.js"></script>
 </body>
 

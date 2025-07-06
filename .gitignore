@@ -1,11 +1,20 @@
-0:40 dia 05/Jul
+0h40 dia 05/Jul
 
 O que eu mexi:
 Fiz o nav, porém ainda não linkei as páginas nem as redes sociais, no nav, não estou conseguindo colocar o position fixed pq o nav fica jogado pra esquerda e tive que alterar o carrossel porque tava dando conflito,  usei o chatgpt mas tá funcionando, porem tem um problema q basicamente ele "vira a pagina" de 1 em 1.
-Adicionei tbm as outras paginas mas não mexi nelas por hora.
+Adicionei tbm as outras paginas mas não mexi nelas por hora. Se eu fizer mais coisa no fim de semana deixo aqui.
 
-01:01 dia 06/Jul
-adicionei as páginas HTMl que faltavam, ajustei toda a galeria, coloquei o novo nav, dei um efeito de zoom quando passa o mouse por cima das imagens, tentei colocar para aparecer um texto por exemplo "coleção tal" mas não consegui.
-Adicionei todos os CSS que faltavam, a página sobre está pronta já, """""""""apenas fazer o mobile"""""""""
-Fiz a âncora para todas as páginas, coloquei as imagens que faltavam do carrossel na pasta IMG, mas acho que devia separar essas pastas para organização.
-Nas páginas SOBRE e SHOP coloquei apenas o novo menu de navegação e a fonte no site todo.
+
+
+12h58 dia 05/Jul
+
+Separei os css para uma melhor organização:
+    base.css - padrão para todas as páginas
+    header_home.css - um header que só aparece quando deslizado.
+    destaqueHome.css - 
+
+O header agora só aparece quando deslizado, vamos deixar assim só na home, nas outras páginas ele pode ser fixo.
+
+O menu que você fez copie o código e vou reaproveitar mais tarde. 
+
+O destaque ajustei algumas coisas e ele já está responsivo

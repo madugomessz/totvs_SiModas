@@ -1,132 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root {
-  --fontetitulos: ("Montserrat", sans-serif);
-  /* 
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal; 
-    */
-}
-
-* {
-  /* coloquei a fonte como padrão, qualquer coisa só remover aqui */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* menu de navegação */
-header {
-  width: 100vw;
-  height: 12vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* position fixed não ta funcionando */
-nav {
-  background-color: #fff;
-  position: fixed;
-  display: flex;
-  margin: auto;
-  width: 80vw;
-  height: 12vh;
-  margin: auto;
-  z-index: 10;
-}
-
-ul {
-  width: 30vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 4rem;
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  color: #000;
-}
-
-li:hover {  /* transição pra deixar a letra mais grossa no nav*/
-  transition: .5s;
-  font-weight: bold;
-}
 
 
-#logo {  /* container da logo */
-  width: 20vw;
-  height: 12vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-nav #logo img { /* imagem da logo */
-  width: 6vw;
-  height: 10vh;
-}
-
-#contatos { /* container dos contatos */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  width: 30vw;
-  height: 12vh;
-}
-
-#social_media { /* container dos icones */
-    display: flex;
-    gap: 5rem;
-} 
-
-#social_media .footer-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.5rem;
-    width: 2.5rem;
-    color: var(--color-neutral-40);
-    border-radius: 50%;
-    transition: all 0.4s;
-}
-
-#social_media .footer-link i {
-    font-size: 1.25rem;    
-}
-
-#social_media .footer-link:hover {
-    opacity: 0.8;
-}
-
-#instagram {
-    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
-}
-
-#facebook {
-    background-color: #4267b3;
-}
-
-#whatsapp {
-    background-color: #25d366;
-}
-/* fim do nav */
 
 /*Começo do home*/
 .home {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
 }
@@ -161,7 +39,7 @@ nav #logo img { /* imagem da logo */
 .conteudo button {
   margin: auto;
   width: 10vw;
-  height: 4vh;
+  height: 5vh;
   font-size: 1rem;
   background-color: #ffffff00;
   border: 1px solid #fff;
@@ -175,19 +53,23 @@ nav #logo img { /* imagem da logo */
   color: #000;
 }
 
+@media screen and (max-width:767px){
+  .conteudo button{
+    width: 20;
+  }
+}
 /*Fim do home*/
 
-/*Começo do teste*/
+/*Começo do espaço vazio*/
 #espaco {
   height: 12vh;
 }
-
-/*Fim do teste*/
+/*Fim do espaço vazio*/
 
 
 /*Começo da galeria do home*/
 #galeriaHome {
-  width: 100vw;
+  width: 100%;
   height: 88vh;
   /* background-color: chocolate; */
   display: grid;
@@ -220,116 +102,56 @@ nav #logo img { /* imagem da logo */
 
 /*Fim da galeria do home*/
 
+@media (max-width: 767px) {
+  #galeriaHome {
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden; 
+    scroll-behavior: smooth;
+    gap: 12px;
+    width: 100%;
+    height: 100vh; /* <- AQUI */
+  padding: 0;
+  margin: 0;
+  }
 
+  #galeriaHome > div {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    height: 100vh;        /* a altura do item deve preencher o container */
+  overflow: hidden;     /* evitar que o conteúdo interno cause rolagem */
+  }
 
+  .formtImgGh {
+    width: 100%;
+    height: 100vh;
+     object-fit: cover;     /* preenche a área sem distorcer */
+  display: block;        /* evita gaps indesejados */
+  }
 
-/*Começo do destaque */
-.destaques {
-  width: 100vw;
-  height: 100vh;
-}
-
-.destaques-container {
-  max-width: 100vw;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-}
-
-.destaques .titulo {
-  font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.carrossel_wrapper {
-  display: flex;
-  height: 80vh;
-  transition: transform 0.4s ease, opacity 0.3s ease;
-}
-
-.card {
-  flex: 0 0 25vw;
-  height: 70vh;
-  border-radius: 10px;
-  text-align: center;
-  padding: 10px;
-  box-sizing: border-box;
-  transition: all 0.3s ease;
-  opacity: 0.6;
-  transform: scale(0.9);
-  display: inline-block;
-  flex-direction: column;
-  cursor: pointer;
-  position: relative;
-}
-
-.card p {
-  font-size: 0.9rem;
-  padding: 8px 8px;
-  border-radius: 8px;
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-  
-}
-
-.card.destaque {
-  transform: scale(1);
-  height: 70vh;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-  border-radius: 18px;
-  opacity: 1;
-}
-
-.card.destaque p {
-  font-size: 0.9rem;
-  padding: 8px 8px;
-  border-radius: 8px;
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-.card.destaque:hover p {
-  visibility: visible;
-  opacity: 1;
-}
-
-.card img {
-  width: 100%;
-  height: 95%;
-  border-radius: 10px;
-  object-fit: cover;
-  position: relative;
-}
-
-.controles {
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+.btn-galeria {
+  display: none; /* Começa invisível */
+  position: fixed;
+  top: 50%;
   transform: translateY(-50%);
-  pointer-events: none;
-}
-
-.controles button {
-  background: none;
-  margin-top: 10rem;
+  background: rgba(255, 255, 255, 0.8);
   border: none;
-  color: #000;
-  font-size: 3rem;
+  font-size: 24px;
+  padding: 10px;
+  z-index: 999;
   cursor: pointer;
-  padding: 5px 10px;
-  border-radius: 50%;
-  pointer-events: all;
 }
 
-/* fim do  destaque */
+.btn-galeria.left {
+  left: 10px;
+}
+
+.btn-galeria.right {
+  right: 10px;
+}
+
+.btn-galeria.show {
+  display: block; /* Só mostra quando o carrossel está visível */
+}
+}
