@@ -1,0 +1,45 @@
+#shop {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  font-family: "Libertinus Math", serif;
+  color:  rgb(78, 6, 46) ;
+}
+
+ .produtos-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 colunas fixas */
+   gap: 40px;
+  max-width: 1400px;
+  margin:0 auto;
+  justify-items: center;
+  font-family: "Libertinus Math", serif;
+}
+
+.produto {
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+.produto img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+.produto img:hover {
+  transform: scale(1.05);
+}
+
+.produto p {
+  margin-top: 10px;
+  font-weight: bold;
+} 
