@@ -15,9 +15,7 @@
      <!-- fim link tailwind  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- biblioteca icones carrinho de compras -->
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" />        
 </head>
 
 <body>
@@ -27,7 +25,7 @@
         <button id="menuClose">&times;</button>
 
 
-        <div class="containerMenu"><!--começo do menu-->
+        <div class="containerMenu absolute"><!--começo do menu-->
             <nav id="navmenu">
                 <ul id="nav_list">
                     <li class="list"><a href="./index.html">HOME</a></li>
@@ -46,111 +44,271 @@
             </div>
         </div><!--fim do menu-->
     </header>
-    <main>
-        <section id="shop">
-            <h1 class="title">SHOP SIMODAS</h1>
-            <div class="produtos-grid">
+<br>
+<br>
+<br>
+<br>
+<br>
+
+        <h2 class="text-2xl relative md:text-3xl font-bold text-center   ">
+            SHOP | SIMODAS
+        </h2>
+    <!-- inicio shop -->
+     <div id="menu">
+
+        <main class="grid grid-cols-2 md:grid-cols-4  mx-auto max-w-7xl mb-16">
+
+            <!-- produto item -->
+             <div class=" flex flex-col gap-2 mb-10">
+                <img
+                 src="./IMG/A.png"
+                 alt=""
+                 class="w-72 h-96 hover:scale-105 duration-200  m-auto">
+                 
+                 <div>
+                    <p class="font-400 text-center">Macacão Laranja</p>
+
+                    <div class="flex items-center gap-2 justify-evenly mt-3">
+                        <p class="font-bold">R$ 100.00</p>
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn"
+                        data-name="Macacão Laranja"
+                        data-price="100.05"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                 </div>
+
+             </div>
+             <!-- fim produto item -->
+
+
+             <!-- produto item -->
+             <div class=" flex flex-col gap-2 mb-10">
+                <img
+                 src="./IMG/B.png"
+                 alt=""
+                 class="w-72 h-96 hover:scale-105 duration-200  m-auto">
+                 
+                 <div>
+                    <p class="font-400 text-center">Conjunto Violeta</p>
+
+                    <div class="flex items-center gap-2 justify-evenly mt-3">
+                        <p class="font-bold">R$ 120.00</p>
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn"
+                        data-name="Conjunto Violeta"
+                        data-price="120.00"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                 </div>
+
+             </div>
+             <!-- fim produto item -->
 
 
 
-                <a href="#">Macacão Terra Elegante<img src="./img/A.png" alt="roupa 1"> R$110,05</a>
-                <a href="#">Macacão Vinho Clássico <img src="./img/B.png" alt="roupa 2">R$109,99</a>
-                <a href="#">Vestido Envolvente Taupe<img src="./img/C.png" alt="roupa 3">R$98,10</a>
-                <a href="#">Macacão Canela Conforto<img src="./img/D.png" alt="roupa 4">R$115,90</a>
-                <a href="#">Macacão Telha Cinturado<img src="./img/E.png" alt="roupa 5">R$109,90</a>
-                <a href="#">Conjunto Vinho Minimalista<img src="./img/F.png" alt="roupa 6">R$125,70</a>
-                <a href="#">Tomara que caia preto<img src="./img/G.png" alt="roupa 7">R$108,40</a>
-                <a href="#">Vestido longo chocolate doce<img src="./img/H.png" alt="roupa 8">R$132,00</a>
-                <a href="#">Macacão esporte fino longo<img src="./img/I.png" alt="roupa 9">R$128,00</a>
+             <!-- produto item -->
+             <div class=" flex flex-col gap-2 mb-10">
+                <img
+                 src="./IMG/C.png"
+                 alt=""
+                 class="w-72 h-96 hover:scale-105 duration-200  m-auto">
+                 
+                 <div>
+                    <p class="font-400 text-center">Vestido Nude</p>
+
+                    <div class="flex items-center gap-2 justify-evenly mt-3">
+                        <p class="font-bold">R$ 130.00</p>
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn"
+                        data-name="Vestido Nude"
+                        data-price="130.00"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                 </div>
+
+             </div>
+             <!-- fim produto item -->
 
 
-            </div>
+             <!-- produto item -->
+             <div class=" flex flex-col gap-2 mb-10">
+                <img
+                 src="./IMG/D.png"
+                 alt=""
+                 class="w-72 h-96 hover:scale-105 duration-200  m-auto">
+                 
+                 <div>
+                    <p class="font-400 text-center">Macacão Salmão Queimado</p>
+
+                    <div class="flex items-center gap-2 justify-evenly mt-3">
+                        <p class="font-bold">R$ 100.00</p>
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn"
+                        data-name="Macacão Salmão Queimado"
+                        data-price="100.00"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                 </div>
+
+             </div>
+             <!-- fim produto item -->
+
+             <!-- produto item -->
+             <div class=" flex flex-col gap-2 ">
+                <img
+                 src="./IMG/E.png"
+                 alt=""
+                 class="w-72 h-96 hover:scale-105 duration-200  m-auto">
+                 
+                 <div>
+                    <p class="font-400 text-center">Conjunto Terra Cota</p>
+
+                    <div class="flex items-center gap-2 justify-evenly mt-3">
+                        <p class="font-bold">R$ 140.00</p>
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn"
+                        data-name="Conjunto Terra Cota"
+                        data-price="140.00"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                 </div>
+
+             </div>
+             <!-- fim produto item -->
+
+
+             <!-- produto item -->
+             <div class=" flex flex-col gap-2 ">
+                <img
+                 src="./IMG/F.png"
+                 alt=""
+                 class="w-72 h-96 hover:scale-105 duration-200  m-auto">
+                 
+                 <div>
+                    <p class="font-400 text-center">Conjunto Vermelho</p>
+
+                    <div class="flex items-center gap-2 justify-evenly mt-3">
+                        <p class="font-bold">R$ 99.90</p>
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn"
+                        data-name="Conjunto Vermelho"
+                        data-price="99.90"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                 </div>
+
+             </div>
+             <!-- fim produto item -->
 
 
 
+             <!-- produto item -->
+             <div class=" flex flex-col gap-2 ">
+                <img
+                 src="./IMG/G.png"
+                 alt=""
+                 class="w-72 h-96 hover:scale-105 duration-200  m-auto">
+                 
+                 <div>
+                    <p class="font-400 text-center">Macacão Preto</p>
 
-        </section>
-    </main>
-    <!--Footer-->
-    <footer>
-        <div id="footer_content">
-            <div id="footer_contacts">
+                    <div class="flex items-center gap-2 justify-evenly mt-3">
+                        <p class="font-bold">R$ 120.00</p>
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn"
+                        data-name="Macacão Preto"
+                        data-price="120.00"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
 
-                <p>Cada peça um nome, uma história.</p>
+                 </div>
 
-                <div id="footer_social_media">
-                    <a href="#" class="footer-link" id="instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
+             </div>
+             <!-- fim produto item -->
 
-                    <a href="#" class="footer-link" id="facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
 
-                    <a href="#" class="footer-link" id="whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
+             <!-- produto item -->
+             <div class=" flex flex-col gap-2 ">
+                <img
+                 src="./IMG/H.png"
+                 alt=""
+                 class="w-72 h-96 hover:scale-105 duration-200  m-auto">
+                 
+                 <div>
+                    <p class="font-400 text-center">Vestido Musgo</p>
+
+                    <div class="flex items-center gap-2 justify-evenly mt-3">
+                        <p class="font-bold">R$ 80.00</p>
+                        <button class="bg-gray-950 px-5 rounded add-to-cart-btn"
+                        data-name="Vestido Musgo"
+                        data-price="80.00"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                 </div>
+
+             </div>
+             <!-- fim produto item -->
+
+        </main>
+        <!-- fim do  shop -->
+
+        <!-- janela que abre do carrinho de compras -->
+        <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden">
+
+            <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+                <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+                <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+                <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+
+                <p class="font-bold mt-4">Endereço de entrega:</p>
+                <input type="text"
+                placeholder="Digite seu endereço completo..."
+                id="address"
+                class="w-full border-2  p-1 rounded my-1">
+                <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo</p>
+
+                <div class="flex items-center justify-between mt-4 w-full">
+                    <button id="close-modal-btn">Fechar</button>
+                    <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
                 </div>
             </div>
 
-            <ul class="footer-list">
-                <li>
-                    <h3>SIMODAS</h3>
-                </li>
-                <li>
-                    <a href="./index.html" class="footer-link">HOME</a>
-                </li>
-                <li>
-                    <a href="./shop.html" class="footer-link">SHOP</a>
-                </li>
-                <li>
-                    <a href="./sobre.html" class="footer-link">SOBRE</a>
-                </li>
-            </ul>
-
-            <ul class="footer-list">
-                <li>
-                    <h3>OFERECEMOS</h3>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Tecido de qualidade</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Atendimento personalizado</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Serviço qualificado</a>
-                </li>
-            </ul>
-
-            <div id="footer_subscribe">
-                <h3>FIQUE POR DENTRO</h3>
-
-                <p>
-                    Cadastre seu e-mail para ficar por dentro de cada novidade SIMODAS.
-                </p>
-
-                <div id="input_group">
-                    <input type="email" id="email">
-                    <button>
-                        <i class="fa-regular fa-envelope"></i>
-                    </button>
-                </div>
-            </div>
         </div>
-
-        <div id="footer_copyright">
-            &#169
-            Todos os direitos reservados 2025
-        </div>
-    </footer>
+        <!-- fim janela q abre carrinho de compras -->
 
 
-    <!--Script para rolagem suave-->
-    <script src="./JS/menu_responsivo.js"></script>
-    <script src="./JS/menuvisivel.js"></script>
-    <script src="./JS/rolagem.js"></script>
-    <script src="./JS/carrossel.js"></script>
+        <!-- botão do carrinho de compras -->
+         <footer class="w-full bg-pink-800 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+            <button class="flex items-center gap-2 text-white font-bold"
+            id="cart-btn">
+            (<span id="cart-count">2</span>)
+                Veja meu carrinho
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+         </footer>
+        <!-- fim do botão do carrinho de compras -->
+     </div>
+    <!-- fim  shop -->
 </body>
-
 </html>
+ 
