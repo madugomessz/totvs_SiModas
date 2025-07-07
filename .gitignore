@@ -48,4 +48,13 @@ centralizei a galeria e adicionei position relative no #header_home para não es
     - adicionei os botões e a janela pra quando clicar no carrinho, já ta tudo pronto
     - falta só fazer o javascript
     - //**ESTRUTURA ESTÁ FINALIZADA**//
+
+00:34 dia 07/Jul _______commit - funcionalidades shop____
+    - comecei a fazer o javascript do shop
+    - adicionei abrir carrinho adicionando o flex
+    - se clicar fora ou no botao fechar do carrinho ele fecha
+    - o forEach cria as divs no html pra colocar dentro do modal
+    - cart.find pra ver se ja tem o item ou nao no carrinho, e nisso adicionar só 1 a mais na quantidade
+    - amanhã falta colocar o link pro whatsapp, e dar uma estilizada nesse modal
+    - e falta linkar o instagram facebook whatsapp em todas as pages
 =================================================================================================
