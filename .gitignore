@@ -21,7 +21,7 @@ O destaque ajustei algumas coisas e ele já está responsivo
 
 
 
-================================================================================================
+
  14:04 dia 06/Jul       ______ commit - att galeria, galeria css e header fixo_____   pacheco
 
 Separei um css para o header fixo e um para galeria
@@ -43,13 +43,13 @@ centralizei a galeria e adicionei position relative no #header_home para não es
     - terminei o sobre
 
 
-22:20 dia 06/Jul _______commit - estrutura do shop concluída____
+22:20 dia 06/Jul _______commit - estrutura do shop concluída____ pacheco
     - tive que refazer o shop todo, tava dando mais trabalho arrumar do que fazer
     - adicionei os botões e a janela pra quando clicar no carrinho, já ta tudo pronto
     - falta só fazer o javascript
     - //**ESTRUTURA ESTÁ FINALIZADA**//
 
-00:34 dia 07/Jul _______commit - funcionalidades shop____
+00:34 dia 07/Jul _______commit - funcionalidades shop____  pacheco
     - comecei a fazer o javascript do shop
     - adicionei abrir carrinho adicionando o flex
     - se clicar fora ou no botao fechar do carrinho ele fecha
@@ -62,4 +62,11 @@ centralizei a galeria e adicionei position relative no #header_home para não es
     Link Instagram: https://www.instagram.com/simodas_21/
     Link Facebook: https://www.facebook.com/share/1E4FKzxa44/?mibextid=wwXIfr
     Link whatsapp: https://api.whatsapp.com/send?phone=5511943642918
-=================================================================================================
+
+00:34 dia 07/Jul _______commit - funcionalidades JS____  pacheco
+    - o carrinho agora remove 
+    - envia as informacoes para o whatsapp
+    - se tentar enviar o endereco sem nada aparece o aviso
+    - acho q está tudo funcionando
+    - agora precisaria coloca Hover pra deixar mais bonito e etc
+    
