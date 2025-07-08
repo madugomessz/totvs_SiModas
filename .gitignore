@@ -77,3 +77,8 @@ centralizei a galeria e adicionei position relative no #header_home para não es
     - agora os icones estão todos ancorados as respectivas paginas
     - ajustei a ordem do nav e a ordem das midias sociais
     - ajustei o numero que começa o carrinho, agora é 0, antes era 2
+
+11:35 dia 08/Jul    _______commit - modal galeria ____  pacheco
+    -fiz o modal pra quando clicar nas imagens da galeria, a foto abrir 
+    -tem q rever as fotos pq algumas que estão com qualidade baixa fica ruim
+    - precisa adicionar zoom?
