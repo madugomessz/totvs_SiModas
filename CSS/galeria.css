@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+a{
+    color: black;
+}
 
 #container_galeria{
     width: 80vw;
