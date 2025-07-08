@@ -61,7 +61,7 @@ centralizei a galeria e adicionei position relative no #header_home para não es
 
     Link Instagram: https://www.instagram.com/simodas_21/
     Link Facebook: https://www.facebook.com/share/1E4FKzxa44/?mibextid=wwXIfr
-    Link whatsapp: https://api.whatsapp.com/send?phone=5511943642918
+    Link whatsapp: https://api.whatsapp.com/send?phone=5511940484076
 
 00:34 dia 07/Jul _______commit - funcionalidades JS____  pacheco
     - o carrinho agora remove 
@@ -70,3 +70,10 @@ centralizei a galeria e adicionei position relative no #header_home para não es
     - acho q está tudo funcionando
     - agora precisaria coloca Hover pra deixar mais bonito e etc
     
+23:25  dia 07/Jul   _______commit - Atualizações gerais ____  pacheco
+    - carrinho agora é preto e o fundo é branco
+    - adicionei hover no carrinho de compras, antes era estatico e no botao "veja meu carrinho"
+    - arrumei o problema da imagem sobrepor o nav
+    - agora os icones estão todos ancorados as respectivas paginas
+    - ajustei a ordem do nav e a ordem das midias sociais
+    - ajustei o numero que começa o carrinho, agora é 0, antes era 2
