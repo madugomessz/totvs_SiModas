@@ -4,10 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    padding-right: 0 !important;
 }
 
+
 a{
-    color: black;
+    color: #000;
 }
 
 #container_galeria{
