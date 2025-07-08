@@ -8,16 +8,19 @@
 
 footer {
     width: 100%;
+    background-color: var(--color-neutral-10);
     color: var(--color-neutral-40);
+    font-size: 0.8rem;
 }
 
-.footer-link {
+.footer-link,.footerTxt{
     text-decoration: none;
 }
 
 #footer_content {
     background-color: var(--color-neutral-10);
-    width: 100vw;
+    width: 80vw;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
