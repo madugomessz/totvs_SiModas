@@ -43,7 +43,7 @@ img {
 
 .image-container{
     position: relative;
-
+    cursor: pointer;
 }
 
 .content{
@@ -86,4 +86,6 @@ img {
     grid-row: span 2;
 }
 
-
+#gallery-modal .modal-img{
+    width: 100%;
+}
