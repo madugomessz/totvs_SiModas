@@ -5,7 +5,11 @@
 }
 
 a{
-    color: black;
+    color: #000;
+}
+
+.redeSociais{
+    color: #000;
 }
 
 #header_home {

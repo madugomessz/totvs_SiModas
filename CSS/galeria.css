@@ -4,11 +4,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
     padding-right: 0 !important;
 }
 
+#ig{
+    color: #000;
+}
 
-a{
+#fcbk{
+    color: #000;
+}
+
+#wpp{
     color: #000;
 }
 
