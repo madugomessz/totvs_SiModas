@@ -30,11 +30,11 @@ body{
     margin-bottom: 3rem;
 }
 
-.tittle-galeria{
-    margin-bottom: 1rem;
+.tittle-galeria h1{
     text-align: center;
-    font-size: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1.9rem;
 }
 
 img {

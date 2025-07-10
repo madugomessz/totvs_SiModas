@@ -5,8 +5,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const carrosselWrapper = document.querySelector(".carrossel_wrapper");
   let currentIndex = 0;
 
-  const cardsVisiveis = 4; // quantos cards aparecem na tela ao mesmo tempo
-  const cardWidthVW = 25;  // largura do card em vw
+  function getMobileStatus() {
+  return window.innerWidth <= 768;
+}
+
+let cardsVisiveis = getMobileStatus() ? 1 : 4;
+let cardWidthVW = getMobileStatus() ? 100 : 25;
+
+window.addEventListener("resize", () => {
+  cardsVisiveis = getMobileStatus() ? 1 : 4;
+  cardWidthVW = getMobileStatus() ? 100 : 25;
+  updateDestaque();
+});
+
 
   function updateDestaque() {
     cards.forEach((card, index) => {
