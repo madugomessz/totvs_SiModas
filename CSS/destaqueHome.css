@@ -9,6 +9,7 @@
   margin: auto;
   overflow: hidden;
   position: relative;
+ 
 }
 
 .destaques .titulo {
@@ -80,11 +81,10 @@
 }
 
 .card img {
-  /* width: 100%; */
-  height: 95%;
-  border-radius: 10px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
-  position: relative;
+  border-radius: 10px;
 }
 
 .controles {
@@ -116,12 +116,15 @@
   .destaques-container {
     overflow: hidden; /* impede que o próximo card apareça */
     position: relative;
+    margin-top: 5rem;
   }
 
   .carrossel_wrapper {
     display: flex;
     transition: transform 0.5s ease;
     width: 100%; /* importantíssimo */
+    height: 80vh;
+    margin-top: 2rem;
   }
 
   .card {
@@ -137,9 +140,9 @@
 
   .card img {
     max-width: 100%;
-    height: auto;
+    height: 90%;
     object-fit: contain;
-    margin: 0 auto;
+    margin: 0 ;
   }
 
   .card p {
@@ -147,4 +150,9 @@
     font-size: 1rem;
     margin-top: 0.5rem;
   }
+
+h2.titulo{
+  margin-left: 1rem;
+  margin-top: 10rem;
+}
 }
